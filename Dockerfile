@@ -9,7 +9,7 @@ MAINTAINER Jack Lee
 #ADD hello.sh /
 #CMD ["/hello.sh"]
 
-ADD simRate /
-CMD ["/simRate"]
-
+# run in Linux file system
+ADD ./Linux.bin.X86/usr/bin/simRtos /
+CMD ["/simRtos"]
 

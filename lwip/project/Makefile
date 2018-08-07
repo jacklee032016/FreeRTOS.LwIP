@@ -39,8 +39,8 @@ endif
 
 LDFLAGS += -lLwipSys -lLwipExts -lLwip -lRtos -lpthread
 
-
+#  -nostartfiles 
 simRtos:$(OBJS)
-	$(CC) -s -o $@ $^ $(LDFLAGS) 
+	$(CC) -s -static -o $@ $^ $(LDFLAGS) 
 	$(MOVE) $@ $(BIN_DIR)/usr/bin  
 
